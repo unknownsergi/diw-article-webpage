@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter+Tight:wght@900&display=swap");
+
+#brand-name {
+    font-family: "Inter Tight", sans-serif;
+}
+
+#explore-topics {
+    font-family: "Inter Tight", sans-serif;
+}
+
+.font-InterTight {
+    font-family: "Inter Tight", sans-serif;
+}
+
+#explore-topics-wrapper {
+    background: #FFD289;
+}
+
+.pr-5 {
+    padding-right: 3rem !important;
+}
+
+.pr-10 {
+    padding-right: 6rem !important;
+}
+
+.pr-15 {
+    padding-right: 9rem !important;
+}
+
+.pr-20 {
+    padding-right: 12rem !important;
+}
+
+.pr-25 {
+    padding-right: 15rem !important;
+}
+
+.pr-30 {
+    padding-right: 18rem !important;
+}
+
+.pr-35 {
+    padding-right: 21rem !important;
+}
