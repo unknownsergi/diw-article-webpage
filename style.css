@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter+Tight:wght@900&display=swap");
 
+body{
+    overflow: hidden;
+}
+
 #brand-name {
     font-family: "Inter Tight", sans-serif;
 }
