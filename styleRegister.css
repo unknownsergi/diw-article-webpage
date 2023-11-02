@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter+Tight:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Azeret+Mono&display=swap");
+
+@font-face {
+    font-family: UnknownFont;
+    src: url("fonts/AzeretMono-VariableFont_wght.ttf");
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+p {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#form-wrapper {
+    z-index: 999;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+}
+
+#register-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 1px solid transparent;
+    width: 50%;
+    height: calc(100vh - 15rem);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    backdrop-filter: saturate(180%) blur(20px);
+    border-radius: 0.5rem;
+}
+
+#label-input {
+    display: flex;
+    flex-direction: column;
+    width: calc(50% - 10%);
+    margin-bottom: 1rem;
+}
+
+#form-title {
+    display: flex;
+    justify-content: center;
+    font-family: "UnknownFont";
+    align-items: center;
+    font-size: 6rem;
+    margin: 0rem 0rem 1rem 0rem;
+}
+input {
+    height: 2.3rem;
+    margin: 0rem 0rem 1.5rem 0rem;
+    background-color: lightgray;
+    border: 0px solid transparent;
+}
+
+::placeholder {
+    color: black;
+}
+
+input:last-child {
+    margin: 0;
+}
+
+label {
+    font-family: "UnknownFont";
+}
+
+button[type="submit"] {
+    width: 10rem;
+    height: 2rem;
+    background-color: white;
+    font-family: "UnknownFont";
+    color: #233d4d;
+    border: 0.1rem solid #233d4d;
+    cursor: pointer;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+input[type="radio"]:hover {
+    opacity: 1;
+}
+
+input[type="radio"] + label {
+    opacity: 0.5;
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+input[type="radio"]:checked + label {
+    opacity: 1;
+}
+
+#form-avatars {
+    display: flex;
+    flex-direction: row;
+}
+
+.btnImage img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+input[placeholder] {
+    font-family: "Azeret Mono", monospace;
+    font-size: small;
+}
+
+#register-button {
+    color: white;
+    background-color: #233d4d;
+}
+
+#cancel-form {
+    width: 10rem;
+    height: 2rem;
+    margin: 1rem;
+    color: red;
+    background-color: white;
+    font-family: "Azeret Mono", monospace;
+    border: 0.1rem solid red;
+    cursor: pointer;
+}
+
+#btnControl1,
+#btnControl2,
+#btnControl3 {
+    display: none;
+}

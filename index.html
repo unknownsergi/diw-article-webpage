@@ -10,15 +10,47 @@
             crossorigin="anonymous"
         />
         <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="styleRegister.css" />
         <title>unknowncyber</title>
     </head>
+    <div id="form-wrapper" style="display: none">
+        <form id="register-form" action="">
+            <h1 id="form-title">BE A WRITER</h1>
+            <div id="label-input">
+                <label for="email">Email</label>
+                <input type="text" name="email" placeholder="Enter your email" />
+                <label for="password">Password</label>
+                <input type="password" name="password" placeholder="Enter your password" />
+                <label for="password">Repeat Password</label>
+                <input type="password" name="confirm-password" placeholder="Repeat password" />
+            </div>
+            <button id="register-button" type="submit">Register</button>
+            <button id="cancel-form" onclick="cancelForm()">Cancel</button>
+            <div id="form-avatars">
+                <input type="radio" id="img1" name="image" />
+                <label class="btnImage" for="img1">
+                    <img src="images/image-1.jpg" alt="" />
+                </label>
+
+                <input type="radio" id="img2" name="image" />
+                <label class="btnImage" for="img2">
+                    <img src="images/red_teletubby.jpg" alt="" />
+                </label>
+
+                <input type="radio" id="img3" name="image" />
+                <label class="btnImage" for="img3">
+                    <img src="images/yellow_teletubby.jpg" alt="" />
+                </label>
+            </div>
+        </form>
+    </div>
     <body class="vh-100">
         <nav class="navbar navbar-expand-lg sticky-top bg-white">
             <div class="container-fluid px-5 navbar-nav">
                 <a href="" class="navbar-brand" id="brand-name">UNKNOWN</a>
                 <div class="d-flex">
                     <a href="" class="nav-link mx-4">Talk to us</a>
-                    <button type="button" class="btn btn-dark">Be a writer</button>
+                    <button type="button" class="btn btn-dark" onclick="displayRegisterForm()">Be a writer</button>
                 </div>
             </div>
         </nav>
@@ -131,5 +163,6 @@
             integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
             crossorigin="anonymous"
         ></script>
+        <script src="script.js"></script>
     </body>
 </html>
